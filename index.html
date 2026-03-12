@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learnsphere</title>
+    <link rel="stylesheet" href="./assets/theme.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="./assets/shell.js"></script>
+    <script>
+      mountShell({
+        title: "Learnsphere",
+        subtitle: "Adaptive learning cockpit",
+        cards: [
+          { label: "Active Learners", value: "1,284", note: "86 new this week" },
+          { label: "Completion Rate", value: "73%", note: "+5 week over week" },
+          { label: "At Risk", value: "114", note: "Intervention needed" },
+          { label: "Avg Quiz Score", value: "82.6", note: "Target 80+" }
+        ],
+        listTitle: "Mentor Queue",
+        items: [
+          "Data analytics cohort needs remediation session",
+          "Three learners missed milestone twice",
+          "Capstone review submissions due tomorrow",
+          "Language track confidence index is improving"
+        ]
+      });
+    </script>
+  </body>
+</html>
